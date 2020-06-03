@@ -4,7 +4,7 @@
    
     <head>
         <meta charset="utf-8"/>
-        <title>Project Name</title>
+        <title>Multi-class Malware Detection</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta content="width=device-width, initial-scale=1" name="viewport"/>
         <meta content="FlameOnePage freebie theme for web startups by FairTech SEO." name="description"/>
@@ -54,14 +54,14 @@
                         <div class="menu-container">
                             <ul class="nav navbar-nav navbar-nav-right">
                                 <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#body">Home</a></li>
-                                <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#about">Background</a></li>
+                                <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#about">Our Model</a></li>
                                 <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#products">Data</a></li>
                                  
                                 <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#pricing">EDA</a></li> 
                                 <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#work">Model Explainability</a></li>
                                 <!--
                                 <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#services">Classifier</a></li> -->
-                                <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#contact">Conclusion</a></li>
+                                <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#contact">Future Work</a></li>
                             </ul>
                         </div>
                     </div>
@@ -83,10 +83,9 @@
                     <div class="container">
                         <div class="carousel-centered">
                             <div class="margin-b-40">
-                                <h1 class="carousel-title">Multi-Class Classification on Benign and Malware Applications</h1>
-                                <p class="color-white"> Karan Sunil, Kevin Elkin, Nancy Vuong <!--<br/> enim minim estudiat veniam siad venumus dolore --></p>
+                                <h1 class="carousel-title">Multi-Class Malware Detection</h1>
+                                <p style="color:white; font-size: 20px;"> Karan Sunil, Kevin Elkin, Nancy Vuong <!--<br/> enim minim estudiat veniam siad venumus dolore --></p>
                             </div>
-                            <a href="#" class="btn-theme btn-theme-sm btn-white-brd text-uppercase">Details</a>
                         </div>
                     </div>
                 </div>
@@ -115,8 +114,8 @@
                     <div class="row">
                         <div class="col-md-5 col-sm-5 md-margin-b-60">
                             <div class="margin-t-50 margin-b-30">
-                                <h2 style="font-size:80px">20%</h2>
-                                <p style="font-size:15px" >of apps on the Google play store are malicious. This is an alarming stat </p>
+                                <h2>Multi-Kernel Learning Model</h2>
+                                <p>Our model uses a combination of 3 trained multi class SVM’s using the three kernels. The multiclass classifier works as a one class vs the rest classifier, so for each kernel we are actually training 5 SVMs. That is basically one classifier being benign vs the rest of the apps, another classifier being adware vs the rest of the apps and so on The ensemble model we used was as a max voting model, where it would pick the most common prediction across the 3 kernels as the final prediction. This helps in masking the weaknesses of certain kernels and augments the strengths of others. </p>
                             </div>
                         </div>
                         <div class="col-md-5 col-sm-7 col-md-offset-2">
@@ -127,13 +126,13 @@
                                         <div class="panel-heading" role="tab" id="headingOne">
                                             <h4 class="panel-title">
                                                 <a class="panel-title-child" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                                    85% of smartphones
+                                                    Based on Hindroid
                                                 </a>
                                             </h4>
                                         </div>
                                         <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
                                             <div class="panel-body">
-                                                run on the Android Operating System. Applications for the Android OS can be downloaded from the Google play store.
+                                                Hindroid is a research paper describes a model that creates a heterogeneous information network using API calls from the code. We first generate matrices to encode features about the APIs. These matrices can be multiplied together to create kernels, which can be visualised as a network graph. This allows us to draw paths between two different apps.
                                             </div>
                                         </div>
                                     </div>
@@ -141,13 +140,20 @@
                                         <div class="panel-heading" role="tab" id="headingTwo">
                                             <h4 class="panel-title">
                                                 <a class="collapsed panel-title-child" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                                    Hi-Tech Engineering
+                                                    Matrices
                                                 </a>
                                             </h4>
                                         </div>
                                         <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
                                             <div class="panel-body">
-                                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch.
+                                                <p style="color:white">Matrix A (apps X APIs) - encodes which APIs exist in a given app. This is similar to a bag of words model. 
+                                                </p>
+                                                <p style="color:white"> 
+                                                    Matrix B (APIs X APIs) - encodes APIs that occur in the same code block. 
+                                                </p>
+                                                <p style="color:white">
+                                                    Matrix P (APIs X APIs) - encodes APIs that are invoked by the same package. In smali files APIs are in the following convention - package->API.
+                                                    </p>
                                             </div>
                                         </div>
                                     </div>
@@ -155,13 +161,21 @@
                                         <div class="panel-heading" role="tab" id="headingThree">
                                             <h4 class="panel-title">
                                                 <a class="collapsed panel-title-child" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                                    Outstanding Results
+                                                    Kernels
                                                 </a>
                                             </h4>
                                         </div>
                                         <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
                                             <div class="panel-body">
-                                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch.
+                                                <p style="color:white">
+                                                    AA^T: Gives us the number of similar APIs between two apps.
+                                                </p>
+                                                <p style="color:white">
+                                                    ABA^T: Gives the number of APIs that coexist in the same code block for two apps.
+                                                </p>
+                                                <p style="color:white">
+                                                    APA^T: Find the number of APIs that share the same package for two apps.
+                                                </p>
                                             </div>
                                         </div>
                                     </div>
@@ -203,7 +217,7 @@
                     
                  <div class="col-sm-4 sm-margin-b-50">
                     <div class="margin-b-20">
-                        <img class="img-responsive" src="img/970x647/01.jpg" alt="Latest Products Image">
+                        <img class="img-responsive" src="img/beauty_2.png" alt="Latest Products Image">
                     </div>
                     <h4><a href="#">Beauty</a></h4>
                 </div>
@@ -212,34 +226,34 @@
                 <!-- Latest Products -->
                 <div class="col-sm-4 sm-margin-b-50">
                     <div class="margin-b-20">
-                        <img class="img-responsive" src="img/970x647/02.jpg" alt="Latest Products Image">
+                        <img class="img-responsive" src="img/business_.png" alt="Latest Products Image">
                     </div>
                     <h4><a href="#">Business</a></h4>
                 </div>
                 <div class="col-sm-4 sm-margin-b-50">
                     <div class="margin-b-20">
-                        <img class="img-responsive" src="img/970x647/02.jpg" alt="Latest Products Image">
+                        <img class="img-responsive" src="img/dating_1.png" alt="Latest Products Image">
                     </div>
                     <h4><a href="#">Dating</a></h4>
                 </div>
 
                 <div class="col-sm-4 sm-margin-b-50">
                     <div class="margin-b-20">
-                        <img class="img-responsive" src="img/970x647/02.jpg" alt="Latest Products Image">
+                        <img class="img-responsive" src="img/entertainment_.png" alt="Latest Products Image">
                     </div>
                     <h4><a href="#">Entertainment</a>
                 </div>
 
                 <div class="col-sm-4 sm-margin-b-50">
                     <div class="margin-b-20">
-                        <img class="img-responsive" src="img/970x647/02.jpg" alt="Latest Products Image">
+                        <img class="img-responsive" src="img/clipboard_1.png" alt="Latest Products Image">
                     </div>
                     <h4><a href="#">Productivity</a></h4>
                 </div>
 
                 <div class="col-sm-4 sm-margin-b-50">
                     <div class="margin-b-20">
-                        <img class="img-responsive" src="img/970x647/02.jpg" alt="Latest Products Image">
+                        <img class="img-responsive" src="img/tools_3.png" alt="Latest Products Image">
                     </div>
                     <h4><a href="#">Tools</a></h4>
                 </div>
@@ -259,7 +273,7 @@
                     <!-- Latest Products -->
                     <div class="col-sm-4 sm-margin-b-50">
                         <div class="margin-b-20">
-                            <img class="img-responsive" src="img/970x647/01.jpg" alt="Latest Products Image">
+                            <img class="img-responsive" src="img/mal1_.png" alt="Latest Products Image">
                         </div>
                         <h4><a href="#">Adware</a></h4>
                         <p>Infests app/webpage with advertisements that can prevent accessing the site/app as originally intended.</p>
@@ -269,7 +283,7 @@
                     <!-- Latest Products -->
                     <div class="col-sm-4 sm-margin-b-50">
                         <div class="margin-b-20">
-                            <img class="img-responsive" src="img/970x647/02.jpg" alt="Latest Products Image">
+                            <img class="img-responsive" src="img/tro_1.png" alt="Latest Products Image">
                         </div>
                         <h4><a href="#">Trojan</a></h4>
                         <p>Malware that is disguised as safe and legitimate software that runs malicious code on a users computer stealthily.</p>
@@ -279,7 +293,7 @@
                     <!-- Latest Products -->
                     <div class="col-sm-4 sm-margin-b-50">
                         <div class="margin-b-20">
-                            <img class="img-responsive" src="img/970x647/03.jpg" alt="Latest Products Image">
+                            <img class="img-responsive" src="img/back_.png" alt="Latest Products Image">
                         </div>
                         <h4><a href="#">Backdoor</a></h4>
                         <p>Malware that gains remote access to a system or device by using vulnerabilities to bypass security measures.</p>
@@ -287,7 +301,7 @@
 
                     <div class="col-sm-4 sm-margin-b-50">
                         <div class="margin-b-20">
-                            <img class="img-responsive" src="img/970x647/03.jpg" alt="Latest Products Image">
+                            <img class="img-responsive" src="img/ransom_.png" alt="Latest Products Image">
                         </div>
                         <h4><a href="#">Ransomware</a></h4>
                         <p>Malware that asks or demands for ransom from a user by denying them access to their computer until demands (usually in the form of payment) have been met.</p>
@@ -333,7 +347,9 @@
                             <!-- Work -->
                             <div class="work work-popup-trigger">
                                 <div class="work-overlay">
-                                    <img class="full-width img-responsive" src="img/397x300/01.jpg" alt="Portfolio Image">
+                                    <!--
+                                    <img class="full-width img-responsive" src="img/397x300/01.jpg" alt="Portfolio Image"> -->
+                                    <h2 style="background-color: white; color: orange; text-align: center; padding: 60px">Correlation Coefficients</h2>
                                 </div>
                                 <div class="work-popup-overlay">
                                     <div class="work-popup-content">
@@ -366,33 +382,27 @@
                             <!-- Work -->
                             <div class="work work-popup-trigger">
                                 <div class="work-overlay">
-                                    <img class="full-width img-responsive" src="img/397x300/02.jpg" alt="Portfolio Image">
+                                    <h2 style="background-color: gray; color: white; text-align: center; padding: 60px">Ranking Algorithm</h2>
+
                                 </div>
                                 <div class="work-popup-overlay">
                                     <div class="work-popup-content">
                                         <a href="javascript:void(0);" class="work-popup-close">Hide</a>
                                         <div class="margin-b-30">
-                                            <h3 class="margin-b-5">Art Of Coding</h3>
-                                            <span>Clean &amp; Minimalistic Design</span>
+                                            <h3 class="margin-b-5">Ranking Algorithm</h3>
                                         </div>
                                         <div class="row">
                                             <div class="col-sm-8 work-popup-content-divider sm-margin-b-20">
                                                 <div class="margin-t-10 sm-margin-t-0">
-                                                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
-                                                    <ul class="list-inline work-popup-tag">
-                                                        <li class="work-popup-tag-item"><a class="work-popup-tag-link" href="#">Strategy,</a></li>
-                                                        <li class="work-popup-tag-item"><a class="work-popup-tag-link" href="#">Implementation,</a></li>
-                                                        <li class="work-popup-tag-item"><a class="work-popup-tag-link" href="#">Credentials</a></li>
-                                                    </ul>
+                                                    <p>We built a ranking algorithm which took into account the frequency of an API occurrence in a particular app category, along with its uniqueness among the other categories. Our ranking algorithm heatmap shows the top 5 APIs for each category based on our ranking algorithm, The center number shows the frequency each API had with its respective category.</p>
+                                                    <p> High frequency in 1 category + Low Frequency in others => Strong Classification Influence</p>
                                                 </div>
                                             </div>
                                             <div class="col-sm-4">
                                                 <div class="margin-t-10 sm-margin-t-0">
-                                                    <p class="margin-b-5"><strong>Project Manager:</strong> Boris Becker</p>
-                                                    <p class="margin-b-5"><strong>Executive:</strong> Heike Macatsch</p>
-                                                    <p class="margin-b-5"><strong>Architect:</strong> Oliver Pocher</p>
-                                                    <p class="margin-b-5"><strong>Client:</strong> Keenthemes</p>
+                                                    <p class="margin-b-5"><strong>Adware:</strong>SetInAnimatin(), SetOutAnimation()</p>
+                                                    <p class="margin-b-5"><strong>Trojan:</strong>KillProcess()</p>
+                                                    <p class="margin-b-5"><strong>Ransomware:</strong>onDisabled(), onEnabled()</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -405,33 +415,21 @@
                             <!-- Work -->
                             <div class="work work-popup-trigger">
                                 <div class="work-overlay">
-                                    <img class="full-width img-responsive" src="img/397x300/03.jpg" alt="Portfolio Image">
+                                <h2 style="background-color: white; color: orange; text-align: center; padding: 60px">Hypothesis Testing</h2>
+
                                 </div>
                                 <div class="work-popup-overlay">
                                     <div class="work-popup-content">
                                         <a href="javascript:void(0);" class="work-popup-close">Hide</a>
                                         <div class="margin-b-30">
-                                            <h3 class="margin-b-5">Art Of Coding</h3>
-                                            <span>Clean &amp; Minimalistic Design</span>
+                                            <h3 class="margin-b-5">Hypothesis Testing</h3>
                                         </div>
                                         <div class="row">
                                             <div class="col-sm-8 work-popup-content-divider sm-margin-b-20">
                                                 <div class="margin-t-10 sm-margin-t-0">
-                                                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
-                                                    <ul class="list-inline work-popup-tag">
-                                                        <li class="work-popup-tag-item"><a class="work-popup-tag-link" href="#">Strategy,</a></li>
-                                                        <li class="work-popup-tag-item"><a class="work-popup-tag-link" href="#">Implementation,</a></li>
-                                                        <li class="work-popup-tag-item"><a class="work-popup-tag-link" href="#">Credentials</a></li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                            <div class="col-sm-4">
-                                                <div class="margin-t-10 sm-margin-t-0">
-                                                    <p class="margin-b-5"><strong>Project Manager:</strong> Boris Becker</p>
-                                                    <p class="margin-b-5"><strong>Executive:</strong> Heike Macatsch</p>
-                                                    <p class="margin-b-5"><strong>Architect:</strong> Oliver Pocher</p>
-                                                    <p class="margin-b-5"><strong>Client:</strong> Keenthemes</p>
+                                                    <p>Using the ranking algorithm, we now have a set of APIs that we know are unique to benign apps. We wanted to see the effect on the classification output of adding these known benign APIs to malware apps. From the graph, we can see that for the first 100 odd APIs we were barely seeing any significant results, but after that we see a large drop in the p-value. A possible reason for that could be that these benign APIs need to co-occur with others to classify an app as benign.</p>
+                                                    <p>Looking at the classification report, we see that the F1 score of Adware has actually increased, unlike all the other categories. The main reason for this is that adware and benign apps are similar. Analysing the SVM weights and tSNE will help improve our understanding of the same.
+                                                    </p>
                                                 </div>
                                             </div>
                                         </div>
@@ -445,33 +443,21 @@
                             <!-- Work -->
                             <div class="work work-popup-trigger">
                                 <div class="work-overlay">
-                                    <img class="full-width img-responsive" src="img/397x415/01.jpg" alt="Portfolio Image">
+                                    <h2 style="background-color: gray; color: white; text-align: center; padding: 60px">SVM Weights</h2>
+
                                 </div>
                                 <div class="work-popup-overlay">
                                     <div class="work-popup-content">
                                         <a href="javascript:void(0);" class="work-popup-close">Hide</a>
                                         <div class="margin-b-30">
-                                            <h3 class="margin-b-5">Art Of Coding</h3>
-                                            <span>Clean &amp; Minimalistic Design</span>
+                                            <h3 class="margin-b-5">SVM Weights</h3>
                                         </div>
                                         <div class="row">
                                             <div class="col-sm-8 work-popup-content-divider sm-margin-b-20">
                                                 <div class="margin-t-10 sm-margin-t-0">
-                                                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
-                                                    <ul class="list-inline work-popup-tag">
-                                                        <li class="work-popup-tag-item"><a class="work-popup-tag-link" href="#">Strategy,</a></li>
-                                                        <li class="work-popup-tag-item"><a class="work-popup-tag-link" href="#">Implementation,</a></li>
-                                                        <li class="work-popup-tag-item"><a class="work-popup-tag-link" href="#">Credentials</a></li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                            <div class="col-sm-4">
-                                                <div class="margin-t-10 sm-margin-t-0">
-                                                    <p class="margin-b-5"><strong>Project Manager:</strong> Boris Becker</p>
-                                                    <p class="margin-b-5"><strong>Executive:</strong> Heike Macatsch</p>
-                                                    <p class="margin-b-5"><strong>Architect:</strong> Oliver Pocher</p>
-                                                    <p class="margin-b-5"><strong>Client:</strong> FairTech</p>
+                                                    <p>We wanted to closely analyse the support vectors and SVM weights in our model. We are using scikit learn Linear Support Vector Classifier as our model. Additionally, since we have five unique classes, we will have 5 decision boundaries. Each decision boundary is composed of both negative and positive weights. The positive weights will correspond to the class of category, for instance, Benign, while the negative weights will correspond to all other classes in training. The two images on the right show the top 5% of positive weights in each SVM. These weights are ordered in descending order with the top of the columns corresponding to the highest weights. These weights will have the most influence on the positive decision that pulls an app towards that particular category. There are 55 vectors (or apps) shown for each category and these apps are responsible for approximately 30-45% of the sum of the total positive weights for their respective category.</p>
+                                                    <p>As shown, we see that AA^T has significantly less incorrect app categories misplaced into the correct corresponding category as opposed to APA^T. This is one important reason why AAt continuously performs better than APA^T. This is likely due to the influence of incorrect categories of apps in the positive weights of the SVM. We will further be able to observe the reason for this occurrence by examining tSNE.
+                                                    </p>
                                                 </div>
                                             </div>
                                         </div>
@@ -484,7 +470,8 @@
                             <!-- Work -->
                             <div class="work work-popup-trigger">
                                 <div class="work-overlay">
-                                    <img class="full-width img-responsive" src="img/800x400/01.jpg" alt="Portfolio Image">
+                                    <h2 style="background-color: orange; color: white; text-align: center; padding: 80px">tSNE</h2>
+
                                 </div>
                                 <div class="work-popup-overlay">
                                     <div class="work-popup-content">
@@ -517,182 +504,33 @@
                     <!-- End Masonry Grid -->
                 </div>
             </div>
-            
-            <!-- Clients -->
-            <div class="content-lg container">
-                <!-- Swiper Clients -->
-                <div class="swiper-slider swiper-clients">
-                    <!-- Swiper Wrapper -->
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <img class="swiper-clients-img" src="img/clients/01.png" alt="Clients Logo">
-                        </div>
-                        <div class="swiper-slide">
-                            <img class="swiper-clients-img" src="img/clients/02.png" alt="Clients Logo">
-                        </div>
-                        <div class="swiper-slide">
-                            <img class="swiper-clients-img" src="img/clients/03.png" alt="Clients Logo">
-                        </div>
-                        <div class="swiper-slide">
-                            <img class="swiper-clients-img" src="img/clients/04.png" alt="Clients Logo">
-                        </div>
-                        <div class="swiper-slide">
-                            <img class="swiper-clients-img" src="img/clients/05.png" alt="Clients Logo">
-                        </div>
-                        <div class="swiper-slide">
-                            <img class="swiper-clients-img" src="img/clients/06.png" alt="Clients Logo">
-                        </div>
-                    </div>
-                    <!-- End Swiper Wrapper -->
-                </div>
-                <!-- End Swiper Clients -->
-            </div>
-            <!-- End Clients Dashboard was here-->
-            <iframe src="https://dsc180b-dashboard.herokuapp.com/" style="width:100%; height:600px"></iframe>
-
         </div>
         <!-- End Work -->
-
-        <!-- Services -->
-        <div id="services">
-            <div class="bg-color-sky-light" data-auto-height="true">
-                <div class="content-lg container">
-                    <div class="row margin-b-40">
-                        <div class="col-sm-6">
-                            <h2>Our Classifier</h2>
-                            <p>Explain how it's an improvement of Hindroid. The square things below looks nice so we're gonna leave it there just in case.</p>
-                        </div>
-                    </div>
-                    <!--// end row -->
-
-                    <div class="row row-space-1 margin-b-2">
-                        <div class="col-sm-4 sm-margin-b-2">
-                            <div class="service" data-height="height">
-                                <div class="service-element">
-                                    <i class="service-icon icon-chemistry"></i>
-                                </div>
-                                <div class="service-info">
-                                    <h3>Company Formation</h3>
-                                    <p class="margin-b-5">Lorem ipsum dolor amet consectetur ut consequat siad esqudiat dolor</p>
-                                </div>
-                                <a href="#" class="content-wrapper-link"></a>    
-                            </div>
-                        </div>
-                        <div class="col-sm-4 sm-margin-b-2">
-                            <div class="service bg-color-base" data-height="height">
-                                <div class="service-element">
-                                    <i class="service-icon color-white icon-screen-tablet"></i>
-                                </div>
-                                <div class="service-info">
-                                    <h3 class="color-white">Stuff Management</h3>
-                                    <p class="color-white margin-b-5">Lorem ipsum dolor amet consectetur ut consequat siad esqudiat dolor</p>
-                                </div>
-                                <a href="#" class="content-wrapper-link"></a>    
-                            </div>
-                        </div>
-                        <div class="col-sm-4">
-                            <div class="service" data-height="height">
-                                <div class="service-element">
-                                    <i class="service-icon icon-badge"></i>
-                                </div>
-                                <div class="service-info">
-                                    <h3>KPI Optimization</h3>
-                                    <p class="margin-b-5">Lorem ipsum dolor amet consectetur ut consequat siad esqudiat dolor</p>
-                                </div>
-                                <a href="#" class="content-wrapper-link"></a>    
-                            </div>
-                        </div>
-                    </div>
-                    <!--// end row -->
-
-                    <div class="row row-space-1">
-                        <div class="col-sm-4 sm-margin-b-2">
-                            <div class="service" data-height="height">
-                                <div class="service-element">
-                                    <i class="service-icon icon-notebook"></i>
-                                </div>
-                                <div class="service-info">
-                                    <h3>Information Security</h3>
-                                    <p class="margin-b-5">Lorem ipsum dolor amet consectetur ut consequat siad esqudiat dolor</p>
-                                </div>
-                                <a href="#" class="content-wrapper-link"></a>    
-                            </div>
-                        </div>
-                        <div class="col-sm-4 sm-margin-b-2">
-                            <div class="service" data-height="height">
-                                <div class="service-element">
-                                    <i class="service-icon icon-speedometer"></i>
-                                </div>
-                                <div class="service-info">
-                                    <h3>Recrutinment</h3>
-                                    <p class="margin-b-5">Lorem ipsum dolor amet consectetur ut consequat siad esqudiat dolor</p>
-                                </div>
-                                <a href="#" class="content-wrapper-link"></a>    
-                            </div>
-                        </div>
-                        <div class="col-sm-4">
-                            <div class="service" data-height="height">
-                                <div class="service-element">
-                                    <i class="service-icon icon-badge"></i>
-                                </div>
-                                <div class="service-info">
-                                    <h3>Materials Supply</h3>
-                                    <p class="margin-b-5">Lorem ipsum dolor amet consectetur ut consequat siad esqudiat dolor</p>
-                                </div>
-                                <a href="#" class="content-wrapper-link"></a>    
-                            </div>
-                        </div>
-                    </div>
-                    <!--// end row -->
-                </div>
-            </div>
-        </div>
-        <!-- End Service -->
             
         <!-- Contact -->
         <div id="contact">
             <div class="content-lg container">
-                <div class="row margin-b-40">
-                    <div class="col-sm-6">
-                        <h2>Conclusion</h2>
-                        <p>Again, we're leaving everything below for now because they look cool and we might want to use them in the future.</p>
-                    </div>
-                </div>
-            </div>
+                <h2>Future Work</h2>
             <!-- Contact List -->
             <div class="section-seperator">
                 <div class="content-lg container">
                     <div class="row">
                         <!-- Contact List -->
                         <div class="col-sm-4 sm-margin-b-50">
-                            <h3><a href="http://ft-seo.ch/">Zurich</a> <span class="text-uppercase margin-l-20">Human Resources</span></h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed tempor incdidunt ut laboret dolor magna ut consequat siad esqudiat dolor</p>
-                            <ul class="list-unstyled contact-list">
-                                <li><i class="margin-r-10 color-base icon-call-out"></i> +41 60 66 555 44 33</li>
-                                <li><i class="margin-r-10 color-base icon-envelope"></i> hr@flameonepage.com</li>
-                            </ul>
+                            <h3>Adding More Kernels</h3>
+                            <p>We’d want to include more kernels into our multi-kernel learning model. Since our model performs best on ransom and adware, and worst on trojans, we definitely want to include a kernel with a metapath that optimizes the usage of the features of trojan applications to improve the classification of trojans.</p>
+                        </div>
+                        <!-- End Contact List -->
+                        <!-- Contact List -->
+                        <div class="col-sm-4 sm-margin-b-50">
+                            
                         </div>
                         <!-- End Contact List -->
 
                         <!-- Contact List -->
                         <div class="col-sm-4 sm-margin-b-50">
-                            <h3><a href="http://ft-seo.ch/">Malta</a> <span class="text-uppercase margin-l-20">Development</span></h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed tempor incdidunt ut laboret dolor magna ut consequat siad esqudiat dolor</p>
-                            <ul class="list-unstyled contact-list">
-                                <li><i class="margin-r-10 color-base icon-call-out"></i> +356 7965 1257</li>
-                                <li><i class="margin-r-10 color-base icon-envelope"></i> developmemt@flameonepage.com</li>
-                            </ul>
-                        </div>
-                        <!-- End Contact List -->
-
-                        <!-- Contact List -->
-                        <div class="col-sm-4 sm-margin-b-50">
-                            <h3><a href="http://ft-seo.ch/">Manchester</a> <span class="text-uppercase margin-l-20">CEO</span></h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed tempor incdidunt ut laboret dolor magna ut consequat siad esqudiat dolor</p>
-                            <ul class="list-unstyled contact-list">
-                                <li><i class="margin-r-10 color-base icon-call-out"></i> +44 654 583 5518</li>
-                                <li><i class="margin-r-10 color-base icon-envelope"></i> ceo@flameonepage.com</li>
-                            </ul>
+                            <h3>Screening</h3>
+                            <p> Another possible future direction for our project is using our ranking algorithm to screen new apps before they get published on the Google playstore. That way, apps that contain too much of certain types of APIs would need a more rigorous background check.</p>
                         </div>
                         <!-- End Contact List -->
                     </div>
@@ -700,56 +538,13 @@
                 </div>
             </div>
             <!-- End Contact List -->
-            
-            <!-- Google Map -->
-            <div class="map height-300">
-			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2724.0694570748947!2d7.455080415208266!3d46.94067397914616!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478e39d0cf20e8d1%3A0x9daac4cd3043d067!2sThunstrasse+50%2C+3005+Bern%2C+Switzerland!5e0!3m2!1sen!2sin!4v1496749852928" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
-			</div>
+        </div>
         </div>
         <!-- End Contact -->
         <!--========== END PAGE LAYOUT ==========-->
 
         <!--========== FOOTER ==========-->
         <footer class="footer">
-            <!-- Links -->
-            <div class="section-seperator">
-                <div class="content-md container">
-                    <div class="row">
-                        <div class="col-sm-2 sm-margin-b-30">
-                            <!-- List -->
-                            <ul class="list-unstyled footer-list">
-                                <li class="footer-list-item"><a href="#body">Home</a></li>
-                                <li class="footer-list-item"><a href="#about">Team</a></li>
-                                <li class="footer-list-item"><a href="#work">Credentials</a></li>
-                                <li class="footer-list-item"><a href="#contact">Contact</a></li>
-                            </ul>
-                            <!-- End List -->
-                        </div>
-                        <div class="col-sm-2 sm-margin-b-30">
-                            <!-- List -->
-                            <ul class="list-unstyled footer-list">
-                                <li class="footer-list-item"><a href="#">Twitter</a></li>
-                                <li class="footer-list-item"><a href="#">Facebook</a></li>
-                                <li class="footer-list-item"><a href="#">Instagram</a></li>
-                                <li class="footer-list-item"><a href="#">YouTube</a></li>
-                            </ul>
-                            <!-- End List -->
-                        </div>
-                        <div class="col-sm-3">
-                            <!-- List -->
-                            <ul class="list-unstyled footer-list">
-                                <li class="footer-list-item"><a href="#">Subscribe to Our Newsletter</a></li>
-                                <li class="footer-list-item"><a href="#">Privacy Policy</a></li>
-                                <li class="footer-list-item"><a href="#">Terms &amp; Conditions</a></li>
-                            </ul>
-                            <!-- End List -->
-                        </div>
-                    </div>
-                    <!--// end row -->
-                </div>
-            </div>
-            <!-- End Links -->
-
             <!-- Copyright -->
             <div class="content container">
                 <div class="row">
