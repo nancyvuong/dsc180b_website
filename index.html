@@ -83,7 +83,7 @@
                     <div class="container">
                         <div class="carousel-centered">
                             <div class="margin-b-40">
-                                <h1 class="carousel-title">Currently Under Heavy Construction Please Come Back in a Few Days</h1>
+                                <h1 class="carousel-title">Multi-Class Classification on Benign and Malware Applications</h1>
                                 <p class="color-white"> Karan Sunil, Kevin Elkin, Nancy Vuong <!--<br/> enim minim estudiat veniam siad venumus dolore --></p>
                             </div>
                             <a href="#" class="btn-theme btn-theme-sm btn-white-brd text-uppercase">Details</a>
@@ -110,15 +110,69 @@
         <!--========== PAGE LAYOUT ==========-->
         <!-- About -->
         <div id="about">
-            <div class="content-lg container">
-                <div class="row margin-b-40">
-                    <div class="col-sm-6">
-                        <h2>Background</h2>
-                        <p>paragraph</p>
+            <div class="bg-color-sky-light">
+                <div class="content-lg container">
+                    <div class="row">
+                        <div class="col-md-5 col-sm-5 md-margin-b-60">
+                            <div class="margin-t-50 margin-b-30">
+                                <h2 style="font-size:80px">20%</h2>
+                                <p style="font-size:15px" >of apps on the Google play store are malicious. This is an alarming stat </p>
+                            </div>
+                        </div>
+                        <div class="col-md-5 col-sm-7 col-md-offset-2">
+                            <!-- Accordion -->
+                            <div class="accordion">
+                                <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading" role="tab" id="headingOne">
+                                            <h4 class="panel-title">
+                                                <a class="panel-title-child" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                                    85% of smartphones
+                                                </a>
+                                            </h4>
+                                        </div>
+                                        <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                                            <div class="panel-body">
+                                                run on the Android Operating System. Applications for the Android OS can be downloaded from the Google play store.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading" role="tab" id="headingTwo">
+                                            <h4 class="panel-title">
+                                                <a class="collapsed panel-title-child" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                                    Hi-Tech Engineering
+                                                </a>
+                                            </h4>
+                                        </div>
+                                        <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                            <div class="panel-body">
+                                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading" role="tab" id="headingThree">
+                                            <h4 class="panel-title">
+                                                <a class="collapsed panel-title-child" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                                    Outstanding Results
+                                                </a>
+                                            </h4>
+                                        </div>
+                                        <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                                            <div class="panel-body">
+                                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End Accodrion -->
+                        </div>
                     </div>
+                    <!--// end row -->
                 </div>
             </div>
-            
         </div>
         <!-- End About -->
 
@@ -128,7 +182,7 @@
                 <div class="row margin-b-40">
                     <div class="col-sm-6">
                         <h2>The Data</h2>
-                        <p>Describe distribution of benign/malware apps we have</p>
+                        <p>Our dataset consists of 300 benign apps and 300 apps of each malware category. To get a good and varied representation of benign applications, our benign dataset is made up of apps from 6 different categories.</p>
                     </div>
 
                 </div>
@@ -141,7 +195,7 @@
                 <div class="content-lg container">
                 <div class="row margin-b-40">
                     <div class="col-sm-6">
-                        <h3>Benign Classifications</h3>                    
+                        <h3>Benign Categories</h3>                    
                     </div>
                 </div>
                 
@@ -151,8 +205,7 @@
                     <div class="margin-b-20">
                         <img class="img-responsive" src="img/970x647/01.jpg" alt="Latest Products Image">
                     </div>
-                    <h4><a href="#">Benign Category #1</a><span class="text-uppercase margin-l-20">Benign Category</span></h4>
-                    <p>Description</p>
+                    <h4><a href="#">Beauty</a></h4>
                 </div>
                 <!-- End Latest Products -->
 
@@ -161,10 +214,38 @@
                     <div class="margin-b-20">
                         <img class="img-responsive" src="img/970x647/02.jpg" alt="Latest Products Image">
                     </div>
-                    <h4><a href="#">Benign Category #2</a><span class="text-uppercase margin-l-20">Benign Category</span></h4>
-                    <p>Description</p>
+                    <h4><a href="#">Business</a></h4>
                 </div>
+                <div class="col-sm-4 sm-margin-b-50">
+                    <div class="margin-b-20">
+                        <img class="img-responsive" src="img/970x647/02.jpg" alt="Latest Products Image">
+                    </div>
+                    <h4><a href="#">Dating</a></h4>
                 </div>
+
+                <div class="col-sm-4 sm-margin-b-50">
+                    <div class="margin-b-20">
+                        <img class="img-responsive" src="img/970x647/02.jpg" alt="Latest Products Image">
+                    </div>
+                    <h4><a href="#">Entertainment</a>
+                </div>
+
+                <div class="col-sm-4 sm-margin-b-50">
+                    <div class="margin-b-20">
+                        <img class="img-responsive" src="img/970x647/02.jpg" alt="Latest Products Image">
+                    </div>
+                    <h4><a href="#">Productivity</a></h4>
+                </div>
+
+                <div class="col-sm-4 sm-margin-b-50">
+                    <div class="margin-b-20">
+                        <img class="img-responsive" src="img/970x647/02.jpg" alt="Latest Products Image">
+                    </div>
+                    <h4><a href="#">Tools</a></h4>
+                </div>
+
+                </div>
+
                 </div>
                 <!-- End Latest Products -->
 
@@ -180,10 +261,8 @@
                         <div class="margin-b-20">
                             <img class="img-responsive" src="img/970x647/01.jpg" alt="Latest Products Image">
                         </div>
-                        <h4><a href="#">Family</a><span class="text-uppercase margin-l-20">Describe family</span></h4>
-                        <p>List all the families we have</p>
-                        <!---->
-                        <a class="link" href="#">Details</a>
+                        <h4><a href="#">Adware</a></h4>
+                        <p>Infests app/webpage with advertisements that can prevent accessing the site/app as originally intended.</p>
                     </div>
                     <!-- End Latest Products -->
 
@@ -192,9 +271,8 @@
                         <div class="margin-b-20">
                             <img class="img-responsive" src="img/970x647/02.jpg" alt="Latest Products Image">
                         </div>
-                        <h4><a href="#">Variety</a><span class="text-uppercase margin-l-20">Describe variety</span></h4>
-                        <p>List all the variety we have</p>
-                        <a class="link" href="#">Details</a>
+                        <h4><a href="#">Trojan</a></h4>
+                        <p>Malware that is disguised as safe and legitimate software that runs malicious code on a users computer stealthily.</p>
                     </div>
                     <!-- End Latest Products -->
 
@@ -203,9 +281,16 @@
                         <div class="margin-b-20">
                             <img class="img-responsive" src="img/970x647/03.jpg" alt="Latest Products Image">
                         </div>
-                        <h4><a href="#">Malware Type</a> <span class="text-uppercase margin-l-20">Describe type</span></h4>
-                        <p>List all the types of malware we have</p>
-                        <a class="link" href="#">Details</a>
+                        <h4><a href="#">Backdoor</a></h4>
+                        <p>Malware that gains remote access to a system or device by using vulnerabilities to bypass security measures.</p>
+                    </div>
+
+                    <div class="col-sm-4 sm-margin-b-50">
+                        <div class="margin-b-20">
+                            <img class="img-responsive" src="img/970x647/03.jpg" alt="Latest Products Image">
+                        </div>
+                        <h4><a href="#">Ransomware</a></h4>
+                        <p>Malware that asks or demands for ransom from a user by denying them access to their computer until demands (usually in the form of payment) have been met.</p>
                     </div>
                     </div>
                     <!-- End Latest Products EDA HERE -->
@@ -221,14 +306,10 @@
         <div id="pricing">
             <div class="content-lg container">
                 <div class="row margin-b-40">
-                    <div class="col-sm-6">
-                        <h2>EDA</h2>
-                    </div>
+                    <h2>EDA</h2>
+                    <iframe src="https://dsc180b-heatmap.herokuapp.com/" style="width:100%; height:637px"></iframe>
                 </div>
-            </div>
-            
-            <iframe src="https://dsc180b-heatmap.herokuapp.com/" style="width:100%; height:637px"></iframe>
-           
+            </div>           
 
         </div>
         <!-- End Pricing -->
@@ -238,10 +319,9 @@
             <div class="section-seperator">
                 <div class="content-md container">
                     <div class="row margin-b-40">
-                        <div class="col-sm-6">
-                            <h2>Model Explainability</h2>
-                            <p>We're keeping the 5 picture layout</p>
-                        </div>
+                        <h2>Model Explainability</h2>
+                        <iframe src="https://dsc180b-dashboard.herokuapp.com/" style="width:100%; height:600px"></iframe>
+                
                     </div>
                     <!--// end row -->
 
@@ -259,27 +339,21 @@
                                     <div class="work-popup-content">
                                         <a href="javascript:void(0);" class="work-popup-close">Hide</a>
                                         <div class="margin-b-30">
-                                            <h3 class="margin-b-5">Art Of Coding</h3>
-                                            <span>Clean &amp; Minimalistic Design</span>
+                                            <h3 class="margin-b-5">Correlation Coefficients</h3>
                                         </div>
                                         <div class="row">
                                             <div class="col-sm-8 work-popup-content-divider sm-margin-b-20">
                                                 <div class="margin-t-10 sm-margin-t-0">
-                                                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
-                                                    <ul class="list-inline work-popup-tag">
-                                                        <li class="work-popup-tag-item"><a class="work-popup-tag-link" href="#">Strategy,</a></li>
-                                                        <li class="work-popup-tag-item"><a class="work-popup-tag-link" href="#">Implementation,</a></li>
-                                                        <li class="work-popup-tag-item"><a class="work-popup-tag-link" href="#">Credentials</a></li>
-                                                    </ul>
+                                                    <p>Correlation coefficients measures the strength between two variables. In our case it measures the strength between API and category. API’s with correlation coefficients close to zero were of little importance in determining the category and classification of an app and could thus be used to reduce the dimensionality of our dataset. We cared about API’s that had a correlation coefficient greater than 0.5. </p>
+                                                    <p>As shown, the APAt kernel has only 1 API which has a correlation coefficient greater than 0.5. This is because as we embed information such as packages into our features, we are generalizing a particular package to have APIs that are either Benign or Malicious. Using package information is ultimately a very granular approach in determining whether an API is benign or malicious. Obtaining these correlation coefficients of each API and kernel was useful, however, this did not explain which category each API was linked to.</p>
                                                 </div>
                                             </div>
                                             <div class="col-sm-4">
                                                 <div class="margin-t-10 sm-margin-t-0">
-                                                    <p class="margin-b-5"><strong>Project Manager:</strong> Boris Becker</p>
-                                                    <p class="margin-b-5"><strong>Executive:</strong> Heike Macatsch</p>
-                                                    <p class="margin-b-5"><strong>Architect:</strong> Oliver Pocher</p>
-                                                    <p class="margin-b-5"><strong>Client:</strong> FairTech</p>
+                                                    <p class="margin-b-5"><strong>AA^T:</strong> 111 API's with Correlation Coefficients greater than 0.5</p>
+                                                    <p class="margin-b-5"><strong>ABA^T:</strong> 29 API's with Correlation Coefficients greater than 0.5</p>
+                                                    <p class="margin-b-5"><strong>APA^T:</strong>1 API's with a Correlation Coefficient greater than 0.5</p>
+                                                    <p class="margin-b-5"><strong>All Kernels:</strong>0 API’s with Correlation Coefficients less than -0.5</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -416,29 +490,23 @@
                                     <div class="work-popup-content">
                                         <a href="javascript:void(0);" class="work-popup-close">Hide</a>
                                         <div class="margin-b-30">
-                                            <h3 class="margin-b-5">Art Of Coding</h3>
-                                            <span>Clean &amp; Minimalistic Design</span>
+                                            <h3 class="margin-b-5">tSNE</h3>
                                         </div>
                                         <div class="row">
                                             <div class="col-sm-8 work-popup-content-divider sm-margin-b-20">
                                                 <div class="margin-t-10 sm-margin-t-0">
-                                                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
-                                                    <ul class="list-inline work-popup-tag">
-                                                        <li class="work-popup-tag-item"><a class="work-popup-tag-link" href="#">Strategy,</a></li>
-                                                        <li class="work-popup-tag-item"><a class="work-popup-tag-link" href="#">Implementation,</a></li>
-                                                        <li class="work-popup-tag-item"><a class="work-popup-tag-link" href="#">Credentials</a></li>
-                                                    </ul>
+                                                    <p>tSNE is a method used to visualize high dimensional data in low dimensions. In tSNE plots, data points that are more clustered together are more similar than those that are not. We created a plot for each kernel. The x and y axes refer to tSNE dimensions 1 and 2, while the data points represent individual apps in our training dataset.</p>
+                                                    <p>For the tSNE plot of the AA^T kernel, you can see that benign and ransomware apps are most cluttered within their own categories, while there is a big cluster of adware, trojan, and backdoor apps in the middle of the plot. This means that the AA-transpose kernel perceives those adware, trojan, and backdoor apps to be similar. We investigated this and found that the trojan apps in that cluster contain a lot of APIs that are rare to trojans but really common to adware apps. The backdoor apps located there not only contain common adware apis but also contain common trojan apis. This is a possible reason why the AA-transpose kernel perceives those adware, trojan and backdoor apps to be similar to each other. 
+                                                    </p>
                                                 </div>
                                             </div>
                                             <div class="col-sm-4">
                                                 <div class="margin-t-10 sm-margin-t-0">
-                                                    <p class="margin-b-5"><strong>Project Manager:</strong> Boris Becker</p>
-                                                    <p class="margin-b-5"><strong>Executive:</strong> Heike Macatsch</p>
-                                                    <p class="margin-b-5"><strong>Architect:</strong> Oliver Pocher</p>
-                                                    <p class="margin-b-5"><strong>Client:</strong> FairTech</p>
+                                                    <p>The tSNE plot for the APA^T kernel has more multi-categorical clusters than the AA-transpose plot. This implies that the APA-transpose kernel would have more difficulty telling different types of apps apart, which is consistent with how it continuously performs worse than the AA-transpose kernel, as we’ve already established.
+                                                    </p>
                                                 </div>
                                             </div>
+
                                         </div>
                                     </div>
                                 </div>
@@ -479,7 +547,7 @@
                 </div>
                 <!-- End Swiper Clients -->
             </div>
-            <!-- End Clients -->
+            <!-- End Clients Dashboard was here-->
             <iframe src="https://dsc180b-dashboard.herokuapp.com/" style="width:100%; height:600px"></iframe>
 
         </div>
